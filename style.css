@@ -6,7 +6,7 @@ box-sizing: border-box;
 
 }
 body{
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(7, 6, 6);
     height: 100vh;
 }
 .interface{
@@ -41,9 +41,4 @@ img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-}
-header .btn.contato{
-    padding: 10px 40px;
-    font-size: 18px;
-    
 }
