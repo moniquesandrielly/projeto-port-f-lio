@@ -1,4 +1,3 @@
-
 *{
 margin: 0;
 padding: 0;
@@ -6,13 +5,17 @@ box-sizing: border-box;
 
 }
 body{
-    background-color: rgb(7, 6, 6);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
 }
 .interface{
 max-width: 1280px;
 margin: 0 auto;
 }
+.flex {
+    display: flex;
+}
+
 
 header{
     padding: 40px 4%;
@@ -24,8 +27,7 @@ header{
 }
 header a{
 color: #f526ea;
-padding: 40px;
-
+text-decoration: none;
 }
 
 header nav ul{
@@ -33,7 +35,7 @@ header nav ul{
     }
     header nav ul li{
         display: inline-block;
-        padding: 0 40px;
+        padding: 0 50px;
     }
 
     
@@ -41,4 +43,16 @@ img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+header .btn-contato button{
+    padding: 10px 40px;
+    font: size 18px; 
+    font-weight: 600;
+background-color: #f526ea;
+border: 0;
+border-radius: 30px;
+}
+section.topo-site{
+    align-items: center;
+    justify-content: space-between;
 }
