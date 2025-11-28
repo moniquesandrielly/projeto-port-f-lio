@@ -9,9 +9,6 @@ body {
     height: 100vh;
 }
 
-/* teste */
-
-
 .interface {
     max-width: 1280px;
     margin: 0 auto;
@@ -30,19 +27,20 @@ header > .interface {
     align-items: center;
     justify-content: space-between;
 }
+.menu_desktop ul {
+    display: flex;
+    gap: 30px;          
+    list-style: none;
+ } 
 
-header a {
-    color: #f526ea;
+.menu_desktop ul li a {
+    color: #fff;      
+    font-size: 18px;
     text-decoration: none;
-}
+    transition: 0.3s;   }   
 
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    padding: 0 50px;
+.menu_desktop ul li a:hover {
+    color: #f526ea;        
 }
 
 img {
@@ -59,32 +57,70 @@ header .btn-contato button {
     background-color: #f526ea;
     border: 0;
     border-radius: 30px;
+    cursor: pointer;
+    color: #000;
+    transition: 0.3s ease;  
 }
 
+
+header .btn-contato button:hover {
+    transform: scale(1.08);            
+    box-shadow: 0 0 12px #f526ea;      
+    background-color: #ff5bf4;        
+}
+
+
+
 section.topo-site {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 40px 4%;
 }
 
 section.topo-site .flex {
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+}
+
+.txt-topo-site {
+    text-align: left;
 }
 
 .topo-site h1 {
-    color: #fdfcfd;
+    color: #fff;
     font-size: 42px;
     line-height: 40px;
 }
 
 .topo-site h1 span {
-    color: #fdfcfd;
+    color: #f526ea;
 }
+
 .topo-site .txt-topo-site p {
-    color: #fdfcfd;
+    color: #fff;
     margin: 40px 0;
     text-align: justify;
     line-height: 28px;
 }
 
+.topo-site .txt-topo-site h3 {
+    color: #f526ea;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.social {
+    margin-top: 10px;       
+    width: 100%;            
+    display: flex;
+    justify-content: center; 
+    gap: 20px;              
+}
+
+.social a {
+    color: #fff;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #f526ea;
+}
