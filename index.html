@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     <title>Meu Portfólio</title>
 </head>
 
@@ -23,15 +21,16 @@
 
         <nav class="menu_desktop">
             <ul>
-                <li><a href="#">início</a></li>
-                <li><a href="#">sobre</a></li>
-                <li><a href="#">projetos</a></li>
-                <li><a href="#">serviços</a></li>
+                <li><a href="#inicio">início</a></li>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="https://moniquesandrielly.github.io/formulario/" target="_blank">projetos</a></li>
+                <li><a href="#servicos">serviços</a></li>
+                
             </ul>
         </nav>
 
         <div class="btn-contato">
-            <a href="#">
+            <a href="#contato">
                 <button>contato</button>
             </a>
         </div>
@@ -39,31 +38,112 @@
 </header>
 
 <main>
-    <section class="topo-site">
+    <!-- =========================
+         SEÇÃO INÍCIO / TOPO
+    =========================== -->
+    <section id="inicio" class="topo-site">
         <div class="interface">
             <div class="flex">
                 <div class="txt-topo-site">
                     <h3>oi, me chamo monique sandrielly</h3>
                     <h1><span>W</span>eb <span>D</span>esign<span>.</span></h1>
-
-                    <p>
-                        Design digital é transformar ideias em experiências.<br>
-                        Essa transformação acontece quando criatividade,<br>
-                        técnica e propósito se unem para dar vida a conceitos<br>
-                        que antes existiam apenas na imaginação.<br>
-                        No universo digital, cada cor, forma e interação é pensada<br>
-                        para provocar sensações, facilitar caminhos e fortalecer conexões.<br>
-                    </p>
+                    
+                    <!-- CARD DO TEXTO INÍCIO -->
+                    <div class="texto inicio">
+                        <p>
+                            Design digital é transformar ideias em experiências.
+                            Essa transformação acontece quando criatividade,
+                            técnica e propósito se unem para dar vida a conceitos
+                            que antes existiam apenas na imaginação.
+                            No universo digital, cada cor, forma e interação é pensada
+                            para provocar sensações, facilitar caminhos e fortalecer conexões.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="sobre">
+        <div class="interface">
+            <div class="sobre-card">
+                <h2>Sobre mim</h2>
+
+                <p>
+                    Oi! Sou a Monique Sandrielly, uma apaixonada por design e criação digital.  
+                    Acredito que cada detalhe — uma cor, uma forma, um movimento — pode mudar totalmente a experiência de quem vê.
+                </p>
+
+                <p>
+                    Transformo ideias em telas que comunicam, encantam e conectam.  
+                    Trabalho com design, front-end e criação de interfaces que unem estética e funcionalidade.
+                </p>
+
+                <p>
+                    Estou sempre explorando novas possibilidades para evoluir como profissional e entregar projetos únicos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SERVIÇOS -->
+    <section id="servicos" class="servicos">
+        <div class="interface">
+            <h2>Serviços</h2>
+
+            <div class="servicos-container">
+                <div class="servico-card">
+                    <h3>Criação de Sites</h3>
+                    <p>Desenvolvimento de sites modernos, responsivos e profissionais.</p>
+                </div>
+
+                <div class="servico-card">
+                    <h3>Design Digital</h3>
+                    <p>Criação de layouts, identidades visuais e peças digitais criativas.</p>
+                </div>
+
+                <div class="servico-card">
+                    <h3>Front-end</h3>
+                    <p>Códigos limpos em HTML, CSS e JavaScript para interfaces atraentes.</p>
+                </div>
+
+                <div class="servico-card">
+                    <h3>Formulários</h3>
+                    <p>Formulários personalizados e funcionais para qualquer tipo de projeto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato" class="contato">
+        <div class="interface">
+            <h2>Contato</h2>
+
+            <form class="form-contato">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu email" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
 </main>
 
+<!-- REDES SOCIAIS -->
 <div class="social">
-   <a href="#"><i class="fa-brands fa-github"></i></a>
-    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+   <a href="https://github.com" target="_blank">
+       <i class="fa-brands fa-github"></i>
+   </a>
+
+   <a href="https://www.linkedin.com" target="_blank">
+       <i class="fa-brands fa-linkedin"></i>
+   </a>
+
+   <a href="https://www.instagram.com" target="_blank">
+       <i class="fa-brands fa-instagram"></i>
+   </a>
 </div>
 
 </body>

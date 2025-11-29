@@ -1,3 +1,6 @@
+/* ===============================
+   RESET E ESTILO GERAL
+=============================== */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +10,7 @@
 body {
     background-color: rgb(0, 0, 0);
     height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 .interface {
@@ -18,6 +22,9 @@ body {
     display: flex;
 }
 
+/* ===============================
+   HEADER / MENU
+=============================== */
 header {
     padding: 40px 4%;
 }
@@ -27,20 +34,22 @@ header > .interface {
     align-items: center;
     justify-content: space-between;
 }
+
 .menu_desktop ul {
     display: flex;
     gap: 30px;          
     list-style: none;
- } 
+}
 
 .menu_desktop ul li a {
     color: #fff;      
     font-size: 18px;
     text-decoration: none;
-    transition: 0.3s;   }   
+    transition: 0.3s;
+}
 
 .menu_desktop ul li a:hover {
-    color: #f526ea;        
+    color: #f526ea;
 }
 
 img {
@@ -59,28 +68,37 @@ header .btn-contato button {
     border-radius: 30px;
     cursor: pointer;
     color: #000;
-    transition: 0.3s ease;  
+    transition: 0.3s ease;
 }
-
 
 header .btn-contato button:hover {
-    transform: scale(1.08);            
-    box-shadow: 0 0 12px #f526ea;      
-    background-color: #ff5bf4;        
+    transform: scale(1.08);
+    box-shadow: 0 0 12px #f526ea;
+    background-color: #ff5bf4;
 }
 
-
-
+/* ===============================
+   TOPO / SEÇÃO INÍCIO
+=============================== */
 section.topo-site {
-    padding: 40px 4%;
+    height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4%;
+    text-align: center;
 }
 
 section.topo-site .flex {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .txt-topo-site {
-    text-align: left;
+    text-align: center;
 }
 
 .topo-site h1 {
@@ -93,26 +111,195 @@ section.topo-site .flex {
     color: #f526ea;
 }
 
-.topo-site .txt-topo-site p {
-    color: #fff;
-    margin: 40px 0;
-    text-align: justify;
-    line-height: 28px;
-}
-
 .topo-site .txt-topo-site h3 {
     color: #f526ea;
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+/* ===============================
+   CARD DO TEXTO INÍCIO
+=============================== */
+.texto.inicio {
+    margin-top: 40px;
+    max-width: 700px;
+    padding: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    text-align: justify;
+
+    background-color: #000;
+    border: 2px solid rgba(245, 38, 234, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(245, 38, 234, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 1s ease;
+
+    opacity: 0;
+    animation: fadeInCard 1s forwards;
+}
+
+.texto.inicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px rgba(245, 38, 234, 0.9);
+}
+
+/* ===============================
+   CARD SEÇÃO SOBRE
+=============================== */
+.sobre {
+    padding: 80px 4%;
+}
+
+.sobre-card {
+    background-color: #000;
+    border: 2px solid rgba(245, 38, 234, 0.5);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(245, 38, 234, 0.6);
+    max-width: 900px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 1s ease;
+
+    opacity: 0;
+    animation: fadeInCard 1s forwards;
+}
+
+.sobre-card h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sobre-card p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
     text-align: justify;
 }
 
-.social {
-    margin-top: 10px;       
-    width: 100%;            
+.sobre-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px rgba(245, 38, 234, 0.9);
+}
+
+/* ===============================
+   SEÇÃO SERVIÇOS
+=============================== */
+.servicos {
+    padding: 60px 4%;
+    margin-top: 40px;
+}
+
+.servicos h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.servico-card {
+    background-color: #111;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(245, 38, 234, 0.3);
+    transition: 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.servico-card h3 {
+    color: #f526ea;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.servico-card p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.servico-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px #f526ea;
+}
+
+/* ===============================
+   SEÇÃO CONTATO
+=============================== */
+section.contato {
+    padding: 60px 4%;
+    margin-top: 60px;
+}
+
+section.contato h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-contato {
+    max-width: 600px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center; 
-    gap: 20px;              
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #f526ea;
+    background-color: #111;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-contato textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-contato button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f526ea;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-contato button:hover {
+    background-color: #ff5bf4;
+    box-shadow: 0 0 12px #f526ea;
+}
+
+/* ===============================
+   REDES SOCIAIS
+=============================== */
+.social {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .social a {
@@ -124,3 +311,19 @@ section.topo-site .flex {
 .social a:hover {
     color: #f526ea;
 }
+
+/* ===============================
+   ANIMAÇÃO FADE-IN
+=============================== */
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
